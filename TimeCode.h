@@ -19,7 +19,7 @@ class TimeCode {
 
 		unsigned int GetHours() const;
 		unsigned int GetMinutes() const;
-		unsigned int GetSecond() const;
+		unsigned int GetSeconds() const;
 
 		long long unsigned int GetTimeCodeAsSeconds() const { return t; };
 		void GetComponents(unsigned int& hr, unsigned int& min, unsigned int& sec) const;

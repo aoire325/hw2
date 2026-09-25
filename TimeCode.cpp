@@ -64,7 +64,7 @@ unsigned int TimeCode::GetMinutes() const{
     return (t / 60) % 60;
 }
 
-unsigned int TimeCode::GetSecond() const{
+unsigned int TimeCode::GetSeconds() const{
     return t % 60;
 }
 
@@ -81,7 +81,7 @@ long long unsigned int TimeCode::ComponentsToSeconds(unsigned int hr, unsigned i
 }
 
 string TimeCode::ToString()const{
-    return to_string(GetHours()) + ":" + to_string(GetMinutes()) + ":" + to_string(GetSecond());
+    return to_string(GetHours()) + ":" + to_string(GetMinutes()) + ":" + to_string(GetSeconds());
 }
 
 TimeCode TimeCode::operator+(const TimeCode& other) const{
