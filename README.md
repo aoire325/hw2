@@ -13,7 +13,7 @@
 
 ---
 
-### 2. `PaintDrying.cpp`
+### 2. `PaintDryTimer.cpp`
 * **Purpose:** Tracks remaining paint drying times based on physical surface area calculations and system clock timestamps.
 * **Key Implementation Details:**
   * **`DryingSnapShot` Struct:** Stores item metadata, a start time timestamp (`time_t`), and a heap-allocated pointer to a `TimeCode` object (`TimeCode* timeToDry`).

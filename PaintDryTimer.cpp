@@ -84,7 +84,23 @@ void tests(){
 
     delete tc2;
 
+    TimeCode *tc3 = compute_time_code(12.75);
 
+    assert(tc3->GetTimeCodeAsSeconds() == 12);
+    assert(tc3->GetHours() == 0);
+    assert(tc3->GetMinutes() == 0);
+    assert(tc3->GetSeconds() == 12);
+
+    delete tc3;
+
+    TimeCode *tc4 = compute_time_code(60.0);
+
+    assert(tc4->GetTimeCodeAsSeconds() == 60);
+    assert(tc4->GetHours() == 0);
+    assert(tc4->GetMinutes() == 1);
+    assert(tc4->GetSeconds() == 0);
+
+    delete tc4;
     // add more tests here
 
 
